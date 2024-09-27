@@ -1360,6 +1360,14 @@ Specialization: Anesthesiologist`;
         form.reset();
         form.style.display = "none";
       });
+       document
+        .getElementById("logoutBtn")
+        .addEventListener("click", function () {
+          // Logic to handle logout (e.g., clearing session, etc.)
+          alert("You have been logged out."); // Optional: alert the user
+          // Redirect to main.html
+          window.location.href = "index.html";
+        });
     </script>
   </body>
 </html>
