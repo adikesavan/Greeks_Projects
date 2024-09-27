@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Website</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .feedback-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-control:focus {
+        box-shadow: none;
+        border-color: #28a745;
+      }
+
+      .submit-btn {
+        background-color: #28a745;
+        color: white;
+        border: none;
+      }
+
+      .submit-btn:hover {
+        background-color: #218838;
+      }
+    </style>
+    <link rel="stylesheet" href="css/next.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="width: 100%"
+    >
+      <div class="container-fluid p-0">
+        <!-- Use container-fluid for full width and remove padding -->
+        <!-- Hamburger Menu on the Left -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: none"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mx-auto" href="#">Health Care</a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="next.html#home"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="next.html#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="next.html#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sch.html">Appointment Scheduling</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="addmed.html">Add Medication Reminder</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="communication.html">Communication</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="next.html#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Profile Section on the Right -->
+        <div
+          class="d-flex align-items-center"
+          style="margin-left: auto; margin-right: 0"
+        >
+          <img
+            src="https://cdn.vectorstock.com/i/500p/53/42/user-member-avatar-face-profile-icon-vector-22965342.jpg"
+            alt="Profile"
+            class="rounded-circle"
+            style="width: 40px; height: 40px; margin-right: 10px"
+          />
+          <button
+            class="btn btn-danger btn-sm"
+            id="logoutBtn"
+            style="margin-right: 0"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="home" class="hero-section">
+      <div class="container">
+        <h1>Welcome to HealthCare</h1>
+        <p>Your health, our priority</p>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container my-5 card shadow-sm border-light rounded">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h2 class="text-center">About Us</h2>
+          <p>
+            A patient engagement platform is an innovative digital ecosystem
+            that enhances the relationship between patients and healthcare
+            providers. It enables patients to take an active role in their
+            healthcare journey by offering seamless access to personal health
+            records, appointment scheduling, and medication management. With
+            features like interactive educational materials and secure
+            messaging, these platforms promote informed decision-making and
+            continuous communication. Ultimately, they aim to foster a
+            collaborative healthcare experience, improving patient satisfaction
+            and health outcomes while streamlining provider workflows.
+          </p>
+        </div>
+
+        <img
+          class="w-50 col-12 col-md-6 img"
+          src="file:///C:/Users/Adhi%20Kesavan/OneDrive/Desktop/VISUAL%20STUDIO/New%20folder/imgs/img1.webp"
+          alt="Description of Image"
+        />
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="container my-5">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row text-center">
+        <!-- Services Cards -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-light rounded">
+            <div class="card-body">
+              <h5 class="card-title">User-Friendly Interface</h5>
+              <p class="card-text">
+                Navigate easily with our intuitive design optimized for all
+                devices.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-light rounded">
+            <div class="card-body">
+              <h5 class="card-title">Appointment Scheduling</h5>
+              <p class="card-text">
+                Schedule and manage appointments seamlessly with automated
+                reminders.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-light rounded">
+            <div class="card-body">
+              <h5 class="card-title">Telehealth Services</h5>
+              <p class="card-text">
+                Access virtual consultations with healthcare professionals from
+                home.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-light rounded">
+            <div class="card-body">
+              <h5 class="card-title">Medication Reminders</h5>
+              <p class="card-text">
+                Stay on track with customizable alerts for your medications.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-light rounded">
+            <div class="card-body">
+              <h5 class="card-title">Wearable Device Integration</h5>
+              <p class="card-text">
+                Sync your health data from wearables for comprehensive
+                monitoring.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-light rounded">
+            <div class="card-body">
+              <h5 class="card-title">AI-Powered Chatbot</h5>
+              <p class="card-text">
+                Get 24/7 assistance with appointment queries and health
+                information.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- feed back-->
+    <div class="feedback-container">
+      <h3 class="text-center mb-4">Patient Feedback</h3>
+      <form id="feedbackForm">
+        <div class="mb-3">
+          <label for="patientName" class="form-label">Patient Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="patientName"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="doctorName" class="form-label">Doctor Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="doctorName"
+            placeholder="Enter doctor's name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="rating" class="form-label">Rate Your Experience</label>
+          <select class="form-control" id="rating" required>
+            <option value="" disabled selected>Select a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Very Good</option>
+            <option value="3">3 - Good</option>
+            <option value="2">2 - Fair</option>
+            <option value="1">1 - Poor</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="comments" class="form-label">Comments</label>
+          <textarea
+            class="form-control"
+            id="comments"
+            rows="4"
+            placeholder="Share your experience or suggestions"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn submit-btn w-100">
+          Submit Feedback
+        </button>
+      </form>
+      <div
+        id="thankYouMessage"
+        class="mt-3 text-center text-success"
+        style="display: none"
+      >
+        Thank you for your feedback!
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container my-5">
+      <h2 class="text-center">Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="contactName">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="contactName"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="contactEmail"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Message</label>
+          <textarea
+            class="form-control"
+            id="contactMessage"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <p>&copy; 2024 HealthCare. All rights reserved.</p>
+    </footer>
+    <script>
+      document
+        .getElementById("logoutBtn")
+        .addEventListener("click", function () {
+          // Logic to handle logout (e.g., clearing session, etc.)
+          alert("You have been logged out."); // Optional: alert the user
+          // Redirect to main.html
+          window.location.href = "main.html";
+        });
+      document
+        .getElementById("feedbackForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Clear the form after submission
+          document.getElementById("patientName").value = "";
+          document.getElementById("doctorName").value = "";
+          document.getElementById("rating").value = "";
+          document.getElementById("comments").value = "";
+
+          // Show thank you message
+          document.getElementById("thankYouMessage").style.display = "block";
+
+          // Hide the thank you message after 3 seconds
+          setTimeout(() => {
+            document.getElementById("thankYouMessage").style.display = "none";
+          }, 3000);
+        });
+    </script>
+  </body>
+</html>
